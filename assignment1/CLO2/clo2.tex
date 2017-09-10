@@ -1,0 +1,246 @@
+\documentclass[12pt]{article}%
+
+\usepackage{amsmath}
+%Tambahan dari template
+
+\begin{document}
+
+\title{Machine Learning \protect\\ Assignment 1 \protect\\ CLO2} 
+\author{Ida Bagus Dwi Satria Kusuma \protect\\ 1301140297}
+\date{\today}
+\maketitle
+
+\begin{enumerate}
+	\item Given three vectors $a = (1 0 0 1 1 0 1)$, $b = (1 1 0 1 0 1 0)$ and $c = (1 0 0 0 0 1 1 )$
+	\begin{enumerate}	
+		\item \textbf{(25 points)} Using Jaccard coeffcient, what pair of vectors that have high similarity?
+		\par \textbf{\textit{Answer}} From [10](Introduction to Data Mining), Similarity measures between objects that contain only binary attributes are called similarity coefficient, and typically have values between 0 and 1, which is same similar like vectors given in this case. 
+		\par Then, let x and y be two objects that consist of n binary attributs. The comparison of two such objects, i.e., two binar vectors, leads to the following four quantities (frequencies):\\ \\
+		$f_{00}$ = the number of atrribute where x is 0 and y is 0 \\
+		$f_{01}$ = the number of atrribute where x is 0 and y is 1 \\
+		$f_{10}$ = the number of atrribute where x is 1 and y is 0 \\
+		$f_{11}$ = the number of atrribute where x is 1 and y is 1 \\ \\
+
+		\par According to [10], the \textbf{Jaccard coefficient}, which is often symbolized by \textit{J}, is given by the following equation:
+
+		
+		\begin{equation}
+		\begin{split}
+			J & = \frac{\textup{number of matching presences}}{\textup{number of attributes not involved in 00 match}}\\ 
+			& = \frac{f_{11}}{f_{01}+f_{10}+f_{11}}
+		\end{split}
+		\end{equation}
+		
+
+		\par Then for each pair of vectors, the similarity are :
+		\begin{enumerate}
+			% PAIR A&B
+			\item \textbf{Pair $a$ and $b$}
+			\par $a = (1 \ 0 \ 0 \ 1 \ 1 \ 0 \ 1)$ \\ $b = (1 \ 1 \ 0 \ 1 \ 0 \ 1 \ 0)$ \\
+			\\ $f_{00} = 1$
+			\\ $f_{01} = 2$
+			\\ $f_{10} = 2$
+			\\ $f_{11} = 2$
+
+			\begin{align*}
+				J(a,b) & = \frac{\textup{number of matching presences}}{\textup{number of attributes not involved in 00 match}} \\
+				& = \frac{f_{11}}{f_{01}+f_{10}+f_{11}} \\
+				& = \frac{2}{2+2+2} \\
+				& = \frac{2}{6} \\
+				& = \frac{1}{3}
+			\end{align*}
+			
+			% PAIR A&C
+			\item \textbf{Pair $a$ and $c$}
+			\par $a = (1 \ 0 \ 0 \ 1 \ 1 \ 0 \ 1)$ \\ $c = (1 \ 0 \ 0 \ 0 \ 0 \ 1 \ 1)$ \\
+			\\ $f_{00} = 2$
+			\\ $f_{01} = 1$
+			\\ $f_{10} = 2$
+			\\ $f_{11} = 2$
+
+
+			\begin{align*}
+				J(a,b) & = \frac{\textup{number of matching presences}}{\textup{number of attributes not involved in 00 match}} \\
+				& = \frac{f_{11}}{f_{01}+f_{10}+f_{11}} \\
+				& = \frac{2}{1+2+2} \\
+				& = \frac{2}{5} \\
+			\end{align*}
+
+			% PAIR B&C
+			\item \textbf{Pair $b$ and $c$}
+			\par $b = (1 \ 1 \ 0 \ 1 \ 0 \ 1 \ 0)$ \\ $c = (1 \ 0 \ 0 \ 0 \ 0 \ 1 \ 1)$ \\
+			\\ $f_{00} = 2$
+			\\ $f_{01} = 1$
+			\\ $f_{10} = 2$
+			\\ $f_{11} = 2$
+
+
+			\begin{align*}
+				J(b,c) & = \frac{\textup{number of matching presences}}{\textup{number of attributes not involved in 00 match}} \\
+				& = \frac{f_{11}}{f_{01}+f_{10}+f_{11}} \\
+				& = \frac{2}{2+1 +2} \\
+				& = \frac{2}{5} \\
+			\end{align*}
+			
+		\end{enumerate}
+
+		\par The similarity of pair $a$ and $b$ is $\frac{1}{3}$ , pair $a$ and $c$ is $\frac{2}{5}$, and pair $b$ and $c$ is $\frac{2}{5}$. So, pair of vectors that have high similarity are pair $a$ and $c$ and pair $b$ and $c$.
+
+
+		\item \textbf{(25 points)} Using Simple Matching Coefficient, what pair of vectors that have high similarity?
+		\par \textbf{\textit{Answer}} From [10](Introduction to Data Mining), Similarity measures between objects that contain only binary attributes are called similarity coefficient, and typically have values between 0 and 1, which is same similar like vectors given in this case. 
+		\par Then, let x and y be two objects that consist of n binary attributs. The comparison of two such objects, i.e., two binar vectors, leads to the following four quantities (frequencies):\\ \\
+		$f_{00}$ = the number of atrribute where x is 0 and y is 0 \\
+		$f_{01}$ = the number of atrribute where x is 0 and y is 1 \\
+		$f_{10}$ = the number of atrribute where x is 1 and y is 0 \\
+		$f_{11}$ = the number of atrribute where x is 1 and y is 1 \\ \\
+
+		\par According to [10], the \textbf{Simple Matching Coefficient}, which is often symbolized by \textit{SMC}, is given by the following equation:
+
+		\begin{equation}
+		\begin{split}
+			SMC & = \frac{\textup{number of matching attribute values}}{\textup{number of attributes}} \\
+			& = \frac{f_{11}+f_{00}}{f_{01}+f_{10}+f_{11}+f_{00}}
+		\end{split}
+		\end{equation}
+
+		\par Then for each pair of vectors, the similarity are :
+		\begin{enumerate}
+			\item \textbf{Pair $a$ and $b$}
+			\par $a = (1 \ 0 \ 0 \ 1 \ 1 \ 0 \ 1)$ \\ $b = (1 \ 1 \ 0 \ 1 \ 0 \ 1 \ 0)$ \\
+			\\ $f_{00} = 1$
+			\\ $f_{01} = 2$
+			\\ $f_{10} = 2$
+			\\ $f_{11} = 2$
+
+			\begin{align*}
+				SMC(a,b) & = \frac{\textup{number of matching attribute values}}{\textup{number of attributes}} \\ 
+				& = \frac{f_{11}+f_{00}}{f_{01}+f_{10}+f_{11}+f_{00}} \\
+				& = \frac{2 + 1}{7} \\
+				& = \frac{3}{7}
+			\end{align*}
+
+			\item \textbf{Pair $a$ and $c$}
+			\par $a = (1 \ 0 \ 0 \ 1 \ 1 \ 0 \ 1)$ \\ $c = (1 \ 0 \ 0 \ 0 \ 0 \ 1 \ 1)$ \\
+			\\ $f_{00} = 2$
+			\\ $f_{01} = 1$
+			\\ $f_{10} = 2$
+			\\ $f_{11} = 2$
+
+			\begin{align*}
+				SMC(a,c) & = \frac{\textup{number of matching attribute values}}{\textup{number of attributes}} \\ 
+				& = \frac{f_{11}+f_{00}}{f_{01}+f_{10}+f_{11}+f_{00}} \\
+				& = \frac{2 + 2}{7} \\
+				& = \frac{4}{7}
+			\end{align*}
+
+			\item \textbf{Pair $b$ and $c$}
+			\par $b = (1 \ 1 \ 0 \ 1 \ 0 \ 1 \ 0)$ \\ $c = (1 \ 0 \ 0 \ 0 \ 0 \ 1 \ 1)$ \\
+			\\ $f_{00} = 2$
+			\\ $f_{01} = 1$
+			\\ $f_{10} = 2$
+			\\ $f_{11} = 2$
+
+			\begin{align*}
+				SMC(b,c) & = \frac{\textup{number of matching attribute values}}{\textup{number of attributes}} \\ 
+				& = \frac{f_{11}+f_{00}}{f_{01}+f_{10}+f_{11}+f_{00}} \\
+				& = \frac{2 + 2}{7} \\
+				& = \frac{4}{7}
+			\end{align*}
+
+		\end{enumerate}
+		\par The similarity of pair $a$ and $b$ is $\frac{3}{7}$ , pair $a$ and $c$ is $\frac{4}{7}$, and pair $b$ and $c$ is $\frac{4}{7}$. So, pair of vectors that have high similarity are pair $a$ and $c$ and pair $b$ and $c$.
+	\end{enumerate}
+
+	\item Given three vectors $p = (0.1 \ 0.8 \ -0.2)$, $ q = (0.1 \ -0.3 \ 0.6)$ and $r = (-0.1 \ 0.5 \ 0.3)$
+	\begin{enumerate}
+		\item \textbf{25 points} Using Cosine similarity, what pair of vectors that have high similarity?
+		\par \textbf{\textit{Answer}} According to [10], if x and y are two document vectors, the \textbf{Cosine Similarity} is given by the following equation:
+
+		\begin{equation}
+			\cos (\textup{x},\textup{y}) = \frac{\textup{x}\cdot  \textup{y}}{\left \| \textup{x} \right \| \left \| \textup{y} \right \|}
+		\end{equation}
+
+		\par where $\cdot$ indicates the vector dot product, $\textup{x} \cdot \textup{y} = \sum_{k=1}^{n} x_k y_k$, and $\left \| \textup{x} \right \|$ is the length of vector x, $\left \| \textup{x} \right \| = \sqrt{\sum_{k=1}^{n}x_{k}^{2}} = \sqrt{\textup{x}\cdot \textup{x}}$.
+
+		\par Then for each pair of vectors, the similarity are :
+		\begin{enumerate}
+			\item \textbf{Pair $p$ and $q$}
+			\begin{align*}
+				 p & = (0.1 0.8 -0.2) \\ 
+				 q & = (0.1 -0.3 0.6) \\ 
+				 \\
+				 p \cdot q & = 0.1 * 0.1 + 0.8 * -0.3 + -0.2 * 0.6 \\
+				 & = 0.01 + (-0.24) + (-0.12) \\
+				 & = (-0.35)\\ 
+				 \\
+				 \left \| p \right \| & = \sqrt{0.1 * 0.1 + 0.8 * 0.8 + (-0.2)*(-0.2)} \\
+				 & = \sqrt{0.01 + 0.64 + 0.04} \\
+				 & = \sqrt{0.69} \\
+				 & = 0.83\\
+				 \\
+				 \left \| q \right \| & = \sqrt{0.1 * 0.1 + (-0.3) * (-0.3) + 0.6*0.6} \\
+				 & = \sqrt{0.01 + 0.09 + 0.36} \\ 
+				 & = \sqrt{0.46} \\
+				 & = 0.68 \\
+				 \\
+				 \cos (p,q) & = \frac{p\cdot q}{\left \| p \right \| \left \| q \right \|} \\
+				 & = \frac{-0.35}{0.83 * 0.68} \\
+				 & = -0.6201 \\
+			\end{align*}
+			
+			\item \textbf{Pair $p$ and $r$}
+			\begin{align*}
+				 p & = (0.1 0.8 -0.2) \\ 
+				 r & = (-0.1 0.5 0.3) \\ 
+				 \\
+				 p \cdot r & = 0.1 * -0.1 + 0.8 * 0.5 + -0.2 * 0.3 \\
+				 & = (-0.01) + 0.40 + (-0.06) \\
+				 & = 0.33\\ 
+				 \\
+				 \left \| p \right \| & = \sqrt{0.1 * 0.1 + 0.8 * 0.8 + (-0.2)*(-0.2)} \\
+				 & = \sqrt{0.01 + 0.64 + 0.04} \\
+				 & = \sqrt{0.69} \\
+				 & = 0.83\\
+				 \\
+				 \left \| r \right \| & = \sqrt{(-0.1) * (-0.1) + 0.5 * 0.5 + 0.3*0.3} \\
+				 & = \sqrt{0.01 + 0.25 + 0.09} \\ 
+				 & = \sqrt{0.35} \\
+				 & = 0.59 \\
+				 \\
+				 \cos (p,r) & = \frac{p\cdot r}{\left \| p \right \| \left \| r \right \|} \\
+				 & = \frac{0.33}{0.83 * 0.59} \\
+				 & = 0.6739 \\
+			\end{align*}
+
+			\item \textbf{Pair $q$ and $r$}
+			\begin{align*}
+				 q & = (0.1 -0.3 0.6 \\ 
+				 r & = (-0.1 0.5 0.3) \\ 
+				 \\
+				 q \cdot r & = 0.1 * (-0.1) + (-0.3) * 0.5 + 0.6 * 0.3 \\
+				 & = (-0.01) + -0.15 + 0.18 \\
+				 & = 0.02\\ 
+				 \\
+				\left \| q \right \| & = \sqrt{0.1 * 0.1 + (-0.3) * (-0.3) + 0.6*0.6} \\
+				 & = \sqrt{0.01 + 0.09 + 0.36} \\ 
+				 & = \sqrt{0.46} \\
+				 & = 0.68 \\
+				 \\
+				 \left \| r \right \| & = \sqrt{(-0.1) * (-0.1) + 0.5 * 0.5 + 0.3*0.3} \\
+				 & = \sqrt{0.01 + 0.25 + 0.09} \\ 
+				 & = \sqrt{0.35} \\
+				 & = 0.59 \\
+				 \\
+				 \cos (q,r) & = \frac{p\cdot r}{\left \| p \right \| \left \| r \right \|} \\
+				 & = \frac{0.02}{0.68 * 0.59} \\
+				 & = 0.0499\\
+			\end{align*}
+		\end{enumerate}
+
+		
+		\item \textbf{25 points} Using Euclidean distance, what pair of vectors that have high similarity?
+	\end{enumerate}
+\end{enumerate}
+\end{document}
+
