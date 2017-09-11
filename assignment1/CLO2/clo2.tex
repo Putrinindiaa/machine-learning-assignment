@@ -154,7 +154,7 @@
 
 	\item Given three vectors $p = (0.1 \ 0.8 \ -0.2)$, $ q = (0.1 \ -0.3 \ 0.6)$ and $r = (-0.1 \ 0.5 \ 0.3)$
 	\begin{enumerate}
-		\item \textbf{25 points} Using Cosine similarity, what pair of vectors that have high similarity?
+		\item \textbf{(25 points)} Using Cosine similarity, what pair of vectors that have high similarity?
 		\par \textbf{\textit{Answer}} According to [10], if x and y are two document vectors, the \textbf{Cosine Similarity} is given by the following equation:
 
 		\begin{equation}
@@ -167,8 +167,8 @@
 		\begin{enumerate}
 			\item \textbf{Pair $p$ and $q$}
 			\begin{align*}
-				 p & = (0.1 0.8 -0.2) \\ 
-				 q & = (0.1 -0.3 0.6) \\ 
+				 p & = (0.1 \ 0.8 \ -0.2) \\ 
+				 q & = (0.1 \ -0.3 \ 0.6) \\ 
 				 \\
 				 p \cdot q & = 0.1 * 0.1 + 0.8 * -0.3 + -0.2 * 0.6 \\
 				 & = 0.01 + (-0.24) + (-0.12) \\
@@ -186,13 +186,13 @@
 				 \\
 				 \cos (p,q) & = \frac{p\cdot q}{\left \| p \right \| \left \| q \right \|} \\
 				 & = \frac{-0.35}{0.83 * 0.68} \\
-				 & = -0.6201 \\
+				 & = -0.6201 \\ %cosine similarity value of p & q
 			\end{align*}
 			
 			\item \textbf{Pair $p$ and $r$}
 			\begin{align*}
-				 p & = (0.1 0.8 -0.2) \\ 
-				 r & = (-0.1 0.5 0.3) \\ 
+				 p & = (0.1 \ 0.8 \ -0.2) \\ 
+				 r & = (-0.1 \ 0.5 \ 0.3) \\ 
 				 \\
 				 p \cdot r & = 0.1 * -0.1 + 0.8 * 0.5 + -0.2 * 0.3 \\
 				 & = (-0.01) + 0.40 + (-0.06) \\
@@ -210,13 +210,13 @@
 				 \\
 				 \cos (p,r) & = \frac{p\cdot r}{\left \| p \right \| \left \| r \right \|} \\
 				 & = \frac{0.33}{0.83 * 0.59} \\
-				 & = 0.6739 \\
+				 & = 0.6739 \\ %cosine similarity value of p & r
 			\end{align*}
 
 			\item \textbf{Pair $q$ and $r$}
 			\begin{align*}
-				 q & = (0.1 -0.3 0.6 \\ 
-				 r & = (-0.1 0.5 0.3) \\ 
+				 q & = (0.1 \ -0.3 \ 0.6 \\ 
+				 r & = (-0.1 \ 0.5 \ 0.3) \\ 
 				 \\
 				 q \cdot r & = 0.1 * (-0.1) + (-0.3) * 0.5 + 0.6 * 0.3 \\
 				 & = (-0.01) + -0.15 + 0.18 \\
@@ -234,13 +234,69 @@
 				 \\
 				 \cos (q,r) & = \frac{p\cdot r}{\left \| p \right \| \left \| r \right \|} \\
 				 & = \frac{0.02}{0.68 * 0.59} \\
-				 & = 0.0499\\
+				 & = 0.0499\\ %cosine similarity value of r & q
 			\end{align*}
 		\end{enumerate}
 
-		
-		\item \textbf{25 points} Using Euclidean distance, what pair of vectors that have high similarity?
+		\par The cosine similarity of pair $p$ and $r$ is -0.6201 (which means the vectors is more opposite), pair $p$ and $r$ is 0.6739 , and pair $q$ and $r$ is 0.0499. The biggest cosine similarity value is from pair $p$ and $r$, which means the highest similarity pair is $p$ and $r$ .
+
+
+		\item \textbf{(25 points)} Using Euclidean distance, what pair of vectors that have high similarity?
+		\par The Euclidean distance can be obtained using this equation : 
+
+		\begin{equation}
+			d(\textbf{\textup{x,y}}) = \left ( \sum_{k=1}^{n} \left | x_k - y_k \right |^2 \right)^{1/2}
+		\end{equation}
+
+		\par For three dimensions : 
+
+		\begin{equation}
+			d(\textbf{\textup{x,y}}) = \sqrt{(x_1-y_1)^2 + (x_2-y_2)^2 + (x_3-y_3)^2}
+		\end{equation}
+
+		\par And for each pair, the euclidean distance are :
+
+		\begin{enumerate}
+			\item \textbf{Pair $p$ and $q$}
+			\begin{align*}
+			 	 p & = (0.1 \ 0.8 \ -0.2) \\ 
+				 q & = (0.1 \ -0.3 \ 0.6) \\ 
+				 \\
+				 d(p,q) & = \sqrt{(0.1-0.1)^2 + (0.8-(-0.3))^2 + (-0.2-0.6)^2} \\
+				 & = \sqrt{0^2 + 1.1^2 + (-0.8)^2} \\
+				 & = \sqrt{1.21 + 0.64} \\
+				 & = \sqrt{1.85} \\
+				 & = 1.3601
+			\end{align*}
+
+			\item \textbf{Pair $p$ and $r$}
+			\begin{align*}
+			 	 p & = (0.1 \ 0.8 \ -0.2) \\ 
+				 r & = (-0.1 \ 0.5 \ 0.3) \\ 
+				 \\
+				 d(p,q) & = \sqrt{(0.1-(-0.1))^2 + (0.8-0.5)^2 + (-0.2-0.3)^2} \\
+				 & = \sqrt{0.2^2 + 0.3^2 + (-0.5)^2} \\
+				 & = \sqrt{0.04 + 0.09 + 0.25} \\
+				 & = \sqrt{0.38} \\
+				 & = 0.6164
+			\end{align*}
+
+			\item \textbf{Pair $q$ and $r$}
+			\begin{align*}
+			 	 q & = (0.1 \ -0.3 \ 0.6) \\ 
+				 r & = (-0.1 \ 0.5 \ 0.3) \\ 
+				 \\
+				 d(p,q) & = \sqrt{(0.1-(-0.1))^2 + ((-0.3)-0.5)^2 + (0.6-0.3)^2} \\
+				 & = \sqrt{0.2^2 + (-0.8)^2 + 0.3^2} \\
+				 & = \sqrt{0.04 + 0.64 + 0.09} \\
+				 & = \sqrt{0.77} \\
+				 & = 0.8775
+			\end{align*}
+		\end{enumerate}
+
+		\par From the calculation above, the euclidean distance of pair $p$ and $q$ is 1.3601, pair $p$ and $r$ is 0.6164, and pair $q$ and $r$ is 0.8775. The closest pair of vectors is pair $p$ and $r$, which is 0.6164.
 	\end{enumerate}
+
 \end{enumerate}
 \end{document}
 
