@@ -1,6 +1,10 @@
+% Name          :Ida Bagus Dwi Satria Kusuma
+% Student's ID  : 1301140297
+
 function [ ] = searchMovie( moviename )
-%SEARCHMOVIE Summary of this function goes here
-%   Detailed explanation goes here
+% Input : judul
+% Fungsi ini digunakan untuk mencari id sebuah film dengan menginputkan
+% judul filmnya
 
 [ratings items userids itemids] = loadmovielens();
 
@@ -15,7 +19,8 @@ for i=1:z
     end
 end
 
-disp(indeks);
+show_indeks = sprintf('Indeks of %s is : %d', moviename,indeks);
+disp(show_indeks);
 
 end
 

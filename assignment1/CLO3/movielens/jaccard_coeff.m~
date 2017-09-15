@@ -1,6 +1,10 @@
-function [ ] = jaccard_coeff(idMovie1, idMovie2)
-%UNTITLED Summary of this function goes here
-%   Detailed explanation goes here
+% Name          :Ida Bagus Dwi Satria Kusuma
+% Student's ID  : 1301140297
+
+function [ output ] = jaccard_coeff(idMovie1, idMovie2)
+%Fungsi jaccard_coeff digunakan untuk menghitung 'Jaccard Coefficient' dari
+%dua film.
+% Input : id
 
 [ratings items userids itemids] = loadmovielens();
 
@@ -37,23 +41,27 @@ for i=1:size(rowMov1)
     end
 end
 
-print_f11 = sprintf('Jumlah user yang merate kedua film : \t %d',f11);
-disp(print_f11);
+% print_f11 = sprintf('Jumlah user yang merate kedua film : \t %d',f11);
+% disp(print_f11);
 
 % Menghitung user yang merate Movie 1
 [f10 ~] = size(rowMov1);
 f10 = f10 - f11;
-print_f10 = sprintf('Jumlah user yang merate film (1) %s : \t %d',items{1,idMovie1},f10);
-disp(print_f10);
+% print_f10 = sprintf('Jumlah user yang merate film (%d) %s : \t %d',idMovie1,items{1,idMovie1},f10);
+% disp(print_f10);
 
 % Menghitung user yang merate Movie 2
 [f01 ~] = size(rowMov2);
 f01 = f01 - f11;
-print_f01 = sprintf('Jumlah user yang merate film (1) %s : \t %d',items{1,idMovie2},f01);
-disp(print_f01);
+% print_f01 = sprintf('Jumlah user yang merate film (%d) %s : \t %d',idMovie2,items{1,idMovie2},f01);
+% disp(print_f01);
 
-% LANGKAH4
+% LANGKAH 4
+% Menghitung jaccard
 jaccard = f11 / (f01 + f10 + f11);
-print_jaccard = sprintf('Jaccard coefficient
+% print_jaccard = sprintf('Jaccard coefficient : %.3f',jaccard);
+% disp(print_jaccard);
+
+output = jaccard;
 end
 

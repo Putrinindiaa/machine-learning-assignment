@@ -12,7 +12,7 @@ function [ratings items userids itemids] = loadmovielens()
 %
 
 more off;
-fprintf(1,'Reading the Movielens data...\n');
+% fprintf(1,'Reading the Movielens data...\n');
 
 % Path and file names
 pathname = 'data/';
@@ -38,4 +38,4 @@ fclose(fid);
 userids = 1:943;
 itemids = 1:1682;
 
-fprintf(1,'Done!\n');
+% fprintf(1,'Done!\n');
