@@ -1,0 +1,11 @@
+function [ output_args ] = searchMovie( moviename )
+%SEARCHMOVIE Summary of this function goes here
+%   Detailed explanation goes here
+
+k = strfind(items, moviename);
+[x z] = size(k);
+
+for i
+end
+end
+
