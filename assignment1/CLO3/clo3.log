@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.29)  16 SEP 2017 03:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.29)  16 SEP 2017 18:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -198,41 +198,92 @@ Package pdftex.def Info: ss_13ai.png used on input line 23.
  [1
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (0.50365pt too wide) in paragraph at lines 27--28
+[]\OT1/cmr/bx/n/12 Answer \OT1/cmr/m/n/12 Gu-nakan search-Movie.m un-tuk men-da
+-p-atkan ID film
+ []
+
 <ss_13aii.png, id=11, 563.10374pt x 174.6525pt>
 File: ss_13aii.png Graphic file (type png)
  <use ss_13aii.png>
-Package pdftex.def Info: ss_13aii.png used on input line 31.
+Package pdftex.def Info: ss_13aii.png used on input line 28.
 (pdftex.def)             Requested size: 284.52756pt x 88.24811pt.
 
 <ss_13aiii.png, id=12, 654.445pt x 105.39375pt>
 File: ss_13aiii.png Graphic file (type png)
  <use ss_13aiii.png>
-Package pdftex.def Info: ss_13aiii.png used on input line 35.
+Package pdftex.def Info: ss_13aiii.png used on input line 32.
 (pdftex.def)             Requested size: 284.52756pt x 45.82016pt.
 
 <ss_13aiv.png, id=13, 674.52pt x 106.3975pt>
 File: ss_13aiv.png Graphic file (type png)
  <use ss_13aiv.png>
-Package pdftex.def Info: ss_13aiv.png used on input line 40.
+Package pdftex.def Info: ss_13aiv.png used on input line 37.
 (pdftex.def)             Requested size: 284.52756pt x 44.88145pt.
- [2 <./ss_13ai.png> <./ss_13aii.png> <./ss_13aiii.png> <./ss_13aiv.png>] (./clo
-3.aux) ) 
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ™ in font cmr12!
+ [2 <./ss_13ai.png> <./ss_13aii.png> <./ss_13aiii.png> <./ss_13aiv.png>]
+Overfull \hbox (3.37018pt too wide) in paragraph at lines 44--45
+[]\OT1/cmr/bx/n/12 Answer \OT1/cmr/m/n/12 Fungsi Cor-re-la-tion Co-ef-fi-cient 
+yang di-gu-nakan adalah
+ []
+
+<ss_13bii.png, id=21, 398.48875pt x 175.65625pt>
+File: ss_13bii.png Graphic file (type png)
+ <use ss_13bii.png>
+Package pdftex.def Info: ss_13bii.png used on input line 56.
+(pdftex.def)             Requested size: 284.52756pt x 125.42708pt.
+
+<ss_13biii.png, id=22, 430.60875pt x 277.035pt>
+File: ss_13biii.png Graphic file (type png)
+ <use ss_13biii.png>
+Package pdftex.def Info: ss_13biii.png used on input line 61.
+(pdftex.def)             Requested size: 284.52756pt x 183.05502pt.
+ [3 <./ss_13bii.png>]
+Overfull \hbox (12.29416pt too wide) in paragraph at lines 65--66
+\OT1/cmr/m/n/12 gan Pear-son Cor-re-la-tion Co-ef-fi-cient se-banyak n tert-ing
+gi. Dalam
+ []
+
+<ss_13biv.png, id=31, 792.9625pt x 105.39375pt>
+File: ss_13biv.png Graphic file (type png)
+ <use ss_13biv.png>
+Package pdftex.def Info: ss_13biv.png used on input line 66.
+(pdftex.def)             Requested size: 284.52756pt x 37.81789pt.
+
+<ss_13bv.png, id=32, 637.38126pt x 103.38625pt>
+File: ss_13bv.png Graphic file (type png)
+ <use ss_13bv.png>
+Package pdftex.def Info: ss_13bv.png used on input line 70.
+(pdftex.def)             Requested size: 284.52756pt x 46.15108pt.
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ˜ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ™ in font cmr12!
+ [4 <./ss_13biii.png> <./ss_13biv.png> <./ss_13bv.png>] [5] (./clo3.aux) ) 
 Here is how much of TeX's memory you used:
- 2094 strings out of 493014
- 28455 string characters out of 6133351
+ 2132 strings out of 493014
+ 28959 string characters out of 6133351
  90923 words of memory out of 5000000
- 5632 multiletter control sequences out of 15000+600000
- 5908 words of font info for 22 fonts, out of 8000000 for 9000
+ 5659 multiletter control sequences out of 15000+600000
+ 9020 words of font info for 33 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,6n,23p,352b,330s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx
-12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12
-.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.p
-fb>
-Output written on clo3.pdf (2 pages, 200979 bytes).
+ 37i,18n,23p,395b,367s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr
+/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/
+local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/l
+ocal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/lo
+cal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/loca
+l/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/
+texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/tex
+live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on clo3.pdf (5 pages, 408844 bytes).
 PDF statistics:
- 32 PDF objects out of 1000 (max. 8388607)
- 16 compressed objects within 1 object stream
+ 65 PDF objects out of 1000 (max. 8388607)
+ 34 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

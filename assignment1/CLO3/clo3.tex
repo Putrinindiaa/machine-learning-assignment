@@ -21,13 +21,10 @@ Download the Movielens data that we sent to you through email. In addition to th
 
 			\par \textbf{Answer} Gunakan jaccard\_coeff.m untuk mendapatkan Jaccard Coefficient. Parameternya adalah dua id film yang ingin diukur.
 			\par \includegraphics[width=10cm]{ss_13ai}
-			% \begin{figure}[h]
-				
-			% \end{figure}
 
 			\item \textbf{(5 points)} What is the Jaccard coefficient between 'Three Colors: Red' and 'Three Colors: Blue'?
 
-			\par \textbf{Answer} Use searchMovie.m to get the movie's id and use jaccard\_coeff.m to get the Jaccard Coefficient.
+			\par \textbf{Answer} Gunakan searchMovie.m untuk mendapatkan ID film dan gunakan jaccard\_coeff.m untuk mendapatkan Jaccard Coefficient.
 			\par \includegraphics[width=10cm]{ss_13aii}
 
 			\item \textbf{(10 points)} What are the 5 movies with highest Jaccard coefficient to 'Taxi Driver'?
@@ -39,7 +36,46 @@ Download the Movielens data that we sent to you through email. In addition to th
 			\par \textbf{Answer} Gunakan searchMovie.m untuk mendapatkan id film 'Star Wars' dan gunakan jaccard\_coeff\_n.m untuk mendapatkan film-film dengan Jaccard Coefficient sebanyak n tertinggi. dalam kasus ini, n = 5.
 			\par \includegraphics[width=10cm]{ss_13aiv}
 		\end{enumerate}
+
+		\item Now let’s try a similarity measure that uses the explicit ratings.
+		\begin{enumerate}
+			\item \textbf{(20 points)} Create a second function that, given two different movie IDs as input, outputs the correlation coefficient of the ratings given to those two movies by all users which have rated both movies. (Note, the function may need to return 0 when the number of users who have rated both is so low that one cannot compute a correlation coefficient.)
+
+			\par \textbf{Answer} Fungsi Correlation Coefficient yang digunakan adalah Pearson Correlation Coefficient yang didapatkan dari persamaan : 
+			\begin{equation}
+			\begin{split}
+				r = \frac{n\left ( \sum xy \right )-\left ( \sum x \right )\left ( \sum y \right )}{\sqrt{\left [ n \left ( \sum x^2 \right ) - \left ( \sum x \right )^2\right ]\left [ n \left ( \sum y^2 \right ) - \left ( \sum y \right )^2\right ]}}
+			\end{split}
+			\end{equation}
+
+			\par Fungsi ini dapat dilihat di pearson\_coeff.m
+
+			\item \textbf{(5 points)} What is now the similarity between 'Toy Story' and 'GoldenEye'?
+
+			\par \textbf{Answer}
+			\par \includegraphics[width=10cm]{ss_13bii}
+
+			\item \textbf{(5 points)} How about 'Three Colors: Red' and 'Three Colors: Blue'?
+			\par \textbf{Answer}
+			\par Gunakan searchMovie.m untuk mendapatkan ID film dan gunakan pearson\_coeff.m untuk mendapatkan Pearson Correlation Coefficient.
+			\par \includegraphics[width=10cm]{ss_13biii}
+
+			\item \textbf{(10 points)} What are the 5 movies with highest similarity to 'Taxi Driver'?
+			\par \textbf{Answer}
+			\par Gunakan searchMovie.m untuk mendapatkan ID film dan gunakan pearson\_coeff\_n.m untuk mendapatkan film-film dengan Pearson Correlation Coefficient sebanyak n tertinggi. Dalam kasus ini, n = 5.
+			\par \includegraphics[width=10cm]{ss_13biv}
+
+			\item \textbf{(10 points)} Again, select a movie of your own choosing and list the 5 movies with highest similarity.
+			\par \textbf{Answer}
+			\par \includegraphics[width=10cm]{ss_13bv}
+		\end{enumerate}
+
+		\item \textbf{(5 points)} Provide some brief thoughts on which similarity measure seems to work ‘better’, in the sense that the computed similarity matches your intuitive sense of similarity. Why do you think this is? Explain.
+
+		\par \textbf{Answer}
+		\par Berdasarkan hasil pengamatan, fungsi Jaccard Coefficient memiliki kemiripan yang lebih baik dari segi judul. Namun, untuk seberapa besar sebuah ID memberikan rating terhadap kedua film tersebut dapat ditunjukkan oleh Pearson Correlation Coefficient.
 	\end{enumerate}
+
 
 \end{enumerate}
 \end{document}
