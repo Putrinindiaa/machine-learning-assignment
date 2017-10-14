@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.29)  11 SEP 2017 13:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.29)  26 SEP 2017 15:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -120,53 +120,53 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--23
 [1
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 39--44
+Underfull \hbox (badness 10000) in paragraph at lines 39--45
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 55--60
+Underfull \hbox (badness 10000) in paragraph at lines 56--61
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 71--76
+Underfull \hbox (badness 10000) in paragraph at lines 72--77
 
  []
 
 
-Overfull \hbox (1.33617pt too wide) in paragraph at lines 91--92
+Overfull \hbox (1.33617pt too wide) in paragraph at lines 92--93
 \OT1/cmr/m/n/12 sures be-tween ob-jects that con-tain only bi-nary at-tributes 
 are called
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 92--97
+Underfull \hbox (badness 10000) in paragraph at lines 93--98
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--97
+Underfull \hbox (badness 10000) in paragraph at lines 93--98
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--97
+Underfull \hbox (badness 10000) in paragraph at lines 93--98
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 110--115
+Underfull \hbox (badness 10000) in paragraph at lines 111--116
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 124--129
+Underfull \hbox (badness 10000) in paragraph at lines 125--130
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 138--143
+Underfull \hbox (badness 10000) in paragraph at lines 139--144
 
  []
 
@@ -190,7 +190,7 @@ ts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2016/texmf-dist/fonts
 ype1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1
 /public/amsfonts/cm/cmti12.pfb>
-Output written on clo2.pdf (11 pages, 116252 bytes).
+Output written on clo2.pdf (11 pages, 116266 bytes).
 PDF statistics:
  80 PDF objects out of 1000 (max. 8388607)
  56 compressed objects within 1 object stream
